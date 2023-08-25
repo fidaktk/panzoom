@@ -496,7 +496,7 @@ function Panzoom(
     // pan calculation.
     // See https://github.com/timmywil/panzoom/issues/512
     // and https://github.com/timmywil/panzoom/issues/606
-    if (!hasMultiple || options.pinchAndPan) {
+    if (hasMultiple || options.pinchAndPan) {
       pan(
         origX + (current.clientX - startClientX) / toScale,
         origY + (current.clientY - startClientY) / toScale,
